@@ -66,24 +66,24 @@ export default function Todo() {
  
   return (
     <>
-     <VStack p={4} bgColor={""}  divider={<StackDivider />} borderColor="pink.200" borderWidth="2px" m="4" borderRadius="lg" width={"lg:100%"}  maxW={{base: '100vw', sm: '100vw', lg: '100vw', xl: '100vw'}} alignItems="stretch" >
+     <VStack p={4} bgColor={""}  divider={<StackDivider />} borderColor="pink.200" borderWidth="2px" m="4" borderRadius="lg" width={"lg:100%"}  maxW={{base: '100vw', sm: '100v%', lg: '100vw', xl: '100vw'}} alignItems="stretch" >
       {/* <div> <h1> Todo Application </h1></div> */}
 
-        <IconButton icon={<FaSun />} isRound="true" size="lg" bgColor={"lightpink"} alignSelf="flex-end" onClick={toggleColorMode}/>
+        <IconButton icon={<FaSun />} isRound="true" size="lg" bgColor={"lightpink"} alignSelf="flex-end" onClick={toggleColorMode} bgGradient='linear(to bottom right, #0100EC, #FB36F4)' />
        <HStack>
        <Heading mb="8" fontWeight="extrabold" size="2xl" bgGradient="linear(to-l, #7928CA, #FF0080)" bgClip="text" alignItems="center">Todo Application</Heading>
        <Spacer />
        <Input variant="filled" placeholder="add todo items" value={todo} onChange={(e)=>{setTodo(e.target.value)}} width="800px" />
       
        <Spacer />
-      <Button onClick={addTodo} colorScheme="pink" width="200px"> Add Todo </Button>
+      <Button onClick={addTodo} colorScheme="pink" width="200px" maxW={{ sm: '100px', lg: '100%'}} > Add Todo </Button>
       
       
       </HStack>
       
       
  
-       <VStack divider={<StackDivider />} borderColor="purple.500" borderWidth="2px" p="4" m="2"  borderRadius="lg" width={"lg:100%"}  maxW={{base: '90vw', sm: '80%', lg: '100%'}} alignItems="stretch" bgColor="lightgrey" > 
+       <VStack divider={<StackDivider />} borderColor="purple.500" borderWidth="2px" p="4" m="2"  borderRadius="lg" width={"lg:100%"}  maxW={{base: '90vw', sm: '100%', lg: '100%'}} alignItems="stretch" bgGradient='linear(to-r,  green.200, pink.500)' > 
       <ul>
       
       
@@ -99,7 +99,7 @@ export default function Todo() {
 
           <Spacer />
 
-          {/* <button onClick={()=> {deleteTodo(elm)}}> Delete </button> */}
+          
           <IconButton icon={<FaTrash/>} ml="10" isRound="true" onClick={()=> {deleteTodo(elm)}}> {} </IconButton>
           </>
           </HStack>
