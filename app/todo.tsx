@@ -69,7 +69,7 @@ export default function Todo() {
      <VStack p={4} bgColor={""}  divider={<StackDivider />} borderColor="pink.200" borderWidth="2px" m="4" borderRadius="lg" width={"lg:100%"}  maxW={{base: '100vw', sm: '100v%', lg: '100vw', xl: '100vw'}} alignItems="stretch" >
       {/* <div> <h1> Todo Application </h1></div> */}
 
-        <IconButton icon={<FaSun />} isRound="true" size="lg" bgColor={"lightpink"} alignSelf="flex-end" onClick={toggleColorMode} bgGradient='linear(to bottom right, #0100EC, #FB36F4)' />
+        <IconButton icon={<FaSun />} isRound={true} size="lg" bgColor={"lightpink"} alignSelf="flex-end" onClick={toggleColorMode} bgGradient='linear(to bottom right, #0100EC, #FB36F4)' aria-label={""} />
        <HStack>
        <Heading mb="8" fontWeight="extrabold" size="2xl" bgGradient="linear(to-l, #7928CA, #FF0080)" bgClip="text" alignItems="center">Todo Application</Heading>
        <Spacer />
@@ -100,7 +100,7 @@ export default function Todo() {
           <Spacer />
 
           
-          <IconButton icon={<FaTrash/>} ml="10" isRound="true" onClick={()=> {deleteTodo(elm)}}> {} </IconButton>
+          <IconButton icon={<FaTrash/>} ml="10" isRound={true} onClick={()=> {deleteTodo(elm)}} aria-label={""}> {} </IconButton>
           </>
           </HStack>
           </li>;
