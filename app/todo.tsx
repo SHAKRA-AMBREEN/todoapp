@@ -129,7 +129,7 @@ export default function Todo() {
               return (
                 <li
                   style={{
-                    color: elm.completed ? "black" : "red",
+                    color: elm.completed ? "green" : "red",
                     fontStyle: "obligue",
                     listStyle: "none",
                     padding: "5px",
