@@ -83,7 +83,7 @@ export default function Todo() {
           <Heading
             mb={{lg:"8", base: "3"}}
             fontWeight="extrabold"
-            size={{ lg: "2xl", base: "md" }}
+            size={{ lg: "2xl", md:"2xl", base: "md" }}
             bgGradient="linear(to-l, #7928CA, #FF0080)"
             bgClip="text"
             alignItems="center"
@@ -116,23 +116,20 @@ export default function Todo() {
 
         <VStack
           divider={<StackDivider />}
-          borderColor="purple.500"
-          borderWidth="2px"
           p="4"
           m="2"
-          borderRadius="lg"
           width={"lg:100%"}
           maxW={{ base: "90vw", sm: "100%", lg: "100%" }}
           alignItems="stretch"
-          bgGradient="linear(to-r,  green.200, pink.500)"
-          fontSize={{lg:"100%",base:"15px"}}
+          bgGradient=""
+          fontSize={{xl:"40px", lg:"30px", md:"20px",base:"15px"}}
         >
           <ul>
             {todos.map((elm: any) => {
               return (
                 <li
                   style={{
-                    color: elm.completed ? "green" : "red",
+                    color: elm.completed ? "black" : "red",
                     fontStyle: "obligue",
                     listStyle: "none",
                     padding: "5px",
