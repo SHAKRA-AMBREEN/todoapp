@@ -83,7 +83,7 @@ export default function Todo() {
           <Heading
             mb={{lg:"8", base: "3"}}
             fontWeight="extrabold"
-            size={{ lg: "2xl", md:"2xl", base: "md" }}
+            size={{xl:"4xl", lg: "2xl", md:"2xl", base: "md" }}
             bgGradient="linear(to-l, #7928CA, #FF0080)"
             bgClip="text"
             alignItems="center"
