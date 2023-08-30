@@ -98,8 +98,8 @@ export default function Todo() {
             onChange={(e) => {
               setTodo(e.target.value);
             }}
-            width={{ lg: "800px", base: "200px" }}
-            fontSize={{lg:"100%", base: "8px"}}
+            width={{ lg: "800px", md:"500px", base: "200px" }}
+            fontSize={{lg:"20px", base: "8px"}}
           />
 
           <Spacer />
@@ -107,7 +107,7 @@ export default function Todo() {
             onClick={addTodo}
             colorScheme="pink"
             width={{ lg: "200px", base: "60px" }}
-            fontSize={{lg:"100%", base:"8px"}}
+            fontSize={{lg:"20px", base:"8px"}}
           >
             {" "}
             Add Todo{" "}
